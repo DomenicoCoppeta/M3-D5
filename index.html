@@ -8,39 +8,1153 @@
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
      <!-- Bootstrap CSS -->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+     <link rel="stylesheet" href="css/stylesheet.css">
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                Dropdown link
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-          </ul>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <a class="navbar-brand" href="#"><img src="assets/logo.svg" alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Browse
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Landings
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Pages
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+            Accounts
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="d-flex justify-content-end">
+      <div class="bell rounded-circle position-relative bg-light mt-2 mr-2">
+        <i class="bi bi-bell"></i>
+        <span class="point bg-purple position-absolute top-right"></span>
+      </div>
+    <div class="avatar-icon dropdown rounded-circle position-relative bg-light mt-2">
+      <div class="dropdown-toggle" role="button" data-toggle="dropdown" aria-expanded="false">
+            <span class="dot bg-green position-absolute bottom-right"></span>
+      </div>
+    </div>
+  </nav>
+  <header class="bg-purple hero">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-md-6 col-lg-5 d-flex py-4">
+                <div class="my-auto">
+                    <h1 class="text-white font-weight-bold">Welcome Dev Students!</h1>
+                    <p class="text-white" id="herotext" >
+                        Hand-picked Instructor and expertly crafted courses, designed
+                        for the modern students and entrepreneur.</p>
+                    <button class="btn bg-green text-white mb-1 mb-sm-0">Browse Courses</button>
+                    <button class="btn bg-white mb-1 mb-sm-0">Are You Instructor?</button>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 offset-lg-1 text-center d-flex align-items-end">
+                <img src="assets/hero-img.png" alt="hero image" class="img-fluid">
+            </div>
         </div>
-    </nav>
+    </div>
+  </header>
+  <section class="general-info bg-white py-4 shadow-sm" aria-label="details">
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3">
+            <div class="col d-flex mb-4 mb-md-0">
+                <span class="circle rounded-circle bg-orange">
+                  <i class="bi bi-camera-video"></i>
+                </span>
+                <div class="d-flex flex-column ml-2">
+                    <h5>30,000 online courses</h5>
+                    <p class="font-sm">Enjoy a variety of fresh topics</p>
+                </div>
+            </div>
+            <div class="col d-flex mb-4 mb-md-0">
+                <span class="circle rounded-circle bg-orange">
+                  <i class="bi bi-people"></i>
+                </span>
+                <div class="d-flex flex-column ml-2">
+                    <h5>Expert instruction</h5>
+                    <p class="font-sm">Find the right instructor for you</p>
+                </div>
+            </div>
+            <div class="col d-flex">
+                <span class="circle rounded-circle bg-orange">
+                  <i class="bi bi-clock"></i>
+                </span>
+                <div class="d-flex flex-column ml-2">
+                    <h5>Lifetime access</h5>
+                    <p class="font-sm">Learn on your schedule</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <section class="recommended bg-light" aria-label="courses">
+    <div class="container px-5 px-xl-3">
+        <h3>Recommended to you</h3>
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 mb-5 position-relative">
 
-    
+            <div class="col">
+                <div class="card border-0 rounded-lg shadow-sm">
+                    <img src="assets/course-graphql.jpg" class="card-img-top" alt="graphql">
+                    <div class="card-body">
+                        <h6 class="card-title">GraphQL: introduction to graphQL for beginners</h6>
+                        <div class="d-flex flex-wrap">
+                            <div class="mr-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-clock mr-1">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span class="font-sm">2h 40m</span>
+                            </div>
+
+                            <div>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="color: #754ffe;"></rect>
+                                    <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
+                                    <rect x="11" y="2" width="2" height="12" rx="1" fill="#754FFE"></rect>
+                                </svg>
+                                <span class="font-sm">Advance</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-end flex-wrap my-3">
+                            <div class="d-flex align-items-center stars font-sm mr-2">
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                2.5
+                            </div>
+                            <span>(1,500)</span>
+                        </div>
+                        <div class="price font-sm">
+                            <span>$500</span>
+                            <del>$600</del>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white ">
+                        <div class="d-flex align-items-center">
+                            <img src="assets/avatar-5.jpg" class="rounded-circle mr-2" alt="avatar image 5"
+                                width="30" height="30">
+                            <span class="font-sm">Brooklyn Simmons</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-bookmark opacity-50 ml-auto">
+                                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card border-0 rounded-lg shadow-sm">
+                    <img src="assets/course-javascript.jpg" class="card-img-top" alt="javascript image">
+                    <div class="card-body">
+                        <h6 class="card-title">A Complete Beginner’s Guide to JavaScript</h6>
+                        <div class="d-flex flex-wrap">
+                            <div class="mr-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-clock mr-1">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span class="font-sm">4h 10m</span>
+                            </div>
+
+                            <div>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="
+                                    color: #754ffe;
+                                "></rect>
+                                    <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
+                                    <rect x="11" y="2" width="2" height="12" rx="1" fill="#754FFE"></rect>
+                                </svg>
+                                <span class="font-sm">Advance</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-end flex-wrap my-3">
+                            <div class="d-flex align-items-center stars font-sm mr-2">
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                3.5
+                            </div>
+                            <span>(7,500)</span>
+                        </div>
+                        <div class="price font-sm">
+                            <span>$700</span>
+                            <del>$850</del>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white ">
+                        <div class="d-flex align-items-center">
+                            <img src="assets/avatar-1.jpg" class="rounded-circle mr-2" alt="avatar image 5"
+                                width="30" height="30">
+                            <span class="font-sm">Jenny Wilson</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-bookmark opacity-50 ml-auto">
+                                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col d-none d-md-block">
+                <div class="card border-0 rounded-lg shadow-sm">
+                    <img src="assets/course-node.jpg" class="card-img-top" alt="node image">
+                    <div class="card-body">
+                        <h6 class="card-title">Beginning Node.js, Express & MongoDB Development</h6>
+                        <div class="d-flex flex-wrap">
+                            <div class="mr-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-clock mr-1">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span class="font-sm">2h 00m</span>
+                            </div>
+
+                            <div>
+                                <svg class="me-1 mt-n1" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE"></rect>
+                                    <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
+                                    <rect x="11" y="2" width="2" height="12" rx="1" fill="#DBD8E9"></rect>
+                                </svg>
+                                <span class="font-sm">Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-end flex-wrap my-3">
+                            <div class="d-flex align-items-center stars font-sm mr-2">
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                4.0
+                            </div>
+                            <span>(15,700)</span>
+                        </div>
+                        <div class="price font-sm">
+                            <span>$800</span>
+                            <del>$950</del>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white ">
+                        <div class="d-flex align-items-center">
+                            <img src="/assets/avatar-3.jpg" class="rounded-circle mr-2" alt="avatar image 5"
+                                width="30" height="30">
+                            <span class="font-sm">Sina Ray</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-bookmark opacity-50 ml-auto">
+                                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col d-none d-lg-block">
+                <div class="card border-0 rounded-lg shadow-sm">
+                    <img src="assets/course-laravel.jpg" class="card-img-top" alt="laravel image">
+                    <div class="card-body">
+                        <h6 class="card-title">Laravel: The Ultimate Beginner’s Guide to Learn Laravel Step by Step
+                        </h6>
+                        <div class="d-flex flex-wrap">
+                            <div class="mr-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-clock mr-1">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span class="font-sm">1h 00m</span>
+                            </div>
+
+                            <div>
+                                <svg class="me-1 mt-n1" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE"></rect>
+                                    <rect x="7" y="5" width="2" height="9" rx="1" fill="#DBD8E9"></rect>
+                                    <rect x="11" y="2" width="2" height="12" rx="1" fill="#DBD8E9"></rect>
+                                </svg>
+                                <span class="font-sm">Beginner</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-end flex-wrap my-3">
+                            <div class="d-flex align-items-center stars font-sm mr-2">
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                4.5
+                            </div>
+                            <span>(2,500)</span>
+                        </div>
+                        <div class="price font-sm">
+                            <span>$170</span>
+                            <del>$220</del>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white ">
+                        <div class="d-flex align-items-center">
+                            <img src="assets/avatar-7.jpg" class="rounded-circle mr-2" alt="avatar image 5"
+                                width="30" height="30">
+                            <span class="font-sm">Sobo Rikhan</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-bookmark opacity-50 ml-auto">
+                                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arrow-left">
+                <h1><i class="bi bi-arrow-left-circle-fill"></i></h1>
+            </div>
+            <div class="arrow-right">
+                <h1><i class="bi bi-arrow-right-circle-fill"></i></h1>
+            </div>
+        </div>
+        
+        <h3>Most Popular</h3>
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 mb-5 position-relative">
+            <div class="col">
+                <div class="card border-0 rounded-lg shadow-sm">
+                    <img src="assets/course-html.jpg" class="card-img-top" alt="html image">
+                    <div class="card-body">
+                        <h6 class="card-title">HTML Full Course - Build a Website Tutorial</h6>
+                        <div class="d-flex flex-wrap">
+                            <div class="mr-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-clock mr-1">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span class="font-sm">3h 16m</span>
+                            </div>
+
+                            <div>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="
+                                    color: #754ffe;
+                                "></rect>
+                                    <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
+                                    <rect x="11" y="2" width="2" height="12" rx="1" fill="#754FFE"></rect>
+                                </svg>
+                                <span class="font-sm">Advance</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-end flex-wrap my-3">
+                            <div class="d-flex align-items-center stars font-sm mr-2">
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                3.0
+                            </div>
+                            <span>(1,600)</span>
+                        </div>
+                        <div class="price font-sm">
+                            <span>$550</span>
+                            <del>$750</del>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white ">
+                        <div class="d-flex align-items-center">
+                            <img src="/assets/avatar-8.jpg" class="rounded-circle mr-2" alt="avatar image 5"
+                                width="30" height="30">
+                            <span class="font-sm">Miston Wilson</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-bookmark opacity-50 ml-auto">
+                                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0 rounded-lg shadow-sm">
+                    <img src="/assets/course-javascript.jpg" class="card-img-top" alt="javascript image">
+                    <div class="card-body">
+                        <h6 class="card-title">A Complete Beginner’s Guide to JavaScript</h6>
+                        <div class="d-flex flex-wrap">
+                            <div class="mr-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-clock mr-1">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span class="font-sm">4h 10m</span>
+                            </div>
+
+                            <div>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="
+                                    color: #754ffe;
+                                "></rect>
+                                    <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
+                                    <rect x="11" y="2" width="2" height="12" rx="1" fill="#754FFE"></rect>
+                                </svg>
+                                <span class="font-sm">Advance</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-end flex-wrap my-3">
+                            <div class="d-flex align-items-center stars font-sm mr-2">
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                3.5
+                            </div>
+                            <span>(7,500)</span>
+                        </div>
+                        <div class="price font-sm">
+                            <span>$700</span>
+                            <del>$850</del>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white ">
+                        <div class="d-flex align-items-center">
+                            <img src="/assets/avatar-1.jpg" class="rounded-circle mr-2" alt="avatar image 5"
+                                width="30" height="30">
+                            <span class="font-sm">Jenny Wilson</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-bookmark opacity-50 ml-auto">
+                                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-none d-md-block">
+                <div class="card border-0 rounded-lg shadow-sm">
+                    <img src="/assets/course-node.jpg" class="card-img-top" alt="node image">
+                    <div class="card-body">
+                        <h6 class="card-title">Beginning Node.js, Express & MongoDB Development</h6>
+                        <div class="d-flex flex-wrap">
+                            <div class="mr-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-clock mr-1">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span class="font-sm">2h 00m</span>
+                            </div>
+
+                            <div>
+                                <svg class="me-1 mt-n1" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE"></rect>
+                                    <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
+                                    <rect x="11" y="2" width="2" height="12" rx="1" fill="#DBD8E9"></rect>
+                                </svg>
+                                <span class="font-sm">Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-end flex-wrap my-3">
+                            <div class="d-flex align-items-center stars font-sm mr-2">
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                4.0
+                            </div>
+                            <span>(15,700)</span>
+                        </div>
+                        <div class="price font-sm">
+                            <span>$800</span>
+                            <del>$950</del>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white ">
+                        <div class="d-flex align-items-center">
+                            <img src="/assets/avatar-3.jpg" class="rounded-circle mr-2" alt="avatar image 5"
+                                width="30" height="30">
+                            <span class="font-sm">Sina Ray</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-bookmark opacity-50 ml-auto">
+                                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-none d-lg-block">
+                <div class="card border-0 rounded-lg shadow-sm">
+                    <img src="/assets/course-react.jpg" class="card-img-top" alt="react image">
+                    <div class="card-body">
+                        <h6 class="card-title">How to easily create a website with React
+                        </h6>
+                        <div class="d-flex flex-wrap">
+                            <div class="mr-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-clock mr-1">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span class="font-sm">3h 55m</span>
+                            </div>
+
+                            <div>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="
+                                    color: #754ffe;
+                                "></rect>
+                                    <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
+                                    <rect x="11" y="2" width="2" height="12" rx="1" fill="#754FFE"></rect>
+                                </svg>
+                                <span class="font-sm">Advance</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-end flex-wrap my-3">
+                            <div class="d-flex align-items-center stars font-sm mr-2">
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                4.5
+                            </div>
+                            <span>(1,500)</span>
+                        </div>
+                        <div class="price font-sm">
+                            <span>$600</span>
+                            <del>$750</del>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white ">
+                        <div class="d-flex align-items-center">
+                            <img src="/assets/avatar-2.jpg" class="rounded-circle mr-2" alt="avatar image 5"
+                                width="30" height="30">
+                            <span class="font-sm">April Noms</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-bookmark opacity-50 ml-auto">
+                                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow-left">
+                <h1><i class="bi bi-arrow-left-circle-fill"></i></h1>
+            </div>
+            <div class="arrow-right">
+                <h1><i class="bi bi-arrow-right-circle-fill"></i></h1>
+            </div>
+        </div>
+
+        <h3>Trending</h3>
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 mb-md-5 position-relative">
+            <div class="col">
+                <div class="card border-0 rounded-lg shadow-sm">
+                    <img src="/assets/course-gatsby.jpg" class="card-img-top" alt="gatsby image">
+                    <div class="card-body">
+                        <h6 class="card-title">Revolutionize how you build the web</h6>
+                        <div class="d-flex flex-wrap">
+                            <div class="mr-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-clock mr-1">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span class="font-sm">1h 46m</span>
+                            </div>
+
+                            <div>
+                                <svg class="me-1 mt-n1" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE"></rect>
+                                    <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
+                                    <rect x="11" y="2" width="2" height="12" rx="1" fill="#DBD8E9"></rect>
+                                </svg>
+                                <span class="font-sm">Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-end flex-wrap my-3">
+                            <div class="d-flex align-items-center stars font-sm mr-2">
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                2.0
+                            </div>
+                            <span>(16,500)</span>
+                        </div>
+                        <div class="price font-sm">
+                            <span>$550</span>
+                            <del>$750</del>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white ">
+                        <div class="d-flex align-items-center">
+                            <img src="/assets/avatar-8.jpg" class="rounded-circle mr-2" alt="avatar image 5"
+                                width="30" height="30">
+                            <span class="font-sm">Miston Wilson</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-bookmark opacity-50 ml-auto">
+                                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0 rounded-lg shadow-sm">
+                    <img src="/assets/course-html.jpg" class="card-img-top" alt="html image">
+                    <div class="card-body">
+                        <h6 class="card-title">HTML Full Course - Build a Website Tutorial</h6>
+                        <div class="d-flex flex-wrap">
+                            <div class="mr-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-clock mr-1">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span class="font-sm">3h 16m</span>
+                            </div>
+
+                            <div>
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE" style="
+                                    color: #754ffe;
+                                "></rect>
+                                    <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
+                                    <rect x="11" y="2" width="2" height="12" rx="1" fill="#754FFE"></rect>
+                                </svg>
+                                <span class="font-sm">Advance</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-end flex-wrap my-3">
+                            <div class="d-flex align-items-center stars font-sm mr-2">
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                3.0
+                            </div>
+                            <span>(1,600)</span>
+                        </div>
+                        <div class="price font-sm">
+                            <span>$550</span>
+                            <del>$750</del>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white ">
+                        <div class="d-flex align-items-center">
+                            <img src="/assets/avatar-8.jpg" class="rounded-circle mr-2" alt="avatar image 5"
+                                width="30" height="30">
+                            <span class="font-sm">Miston Wilson</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-bookmark opacity-50 ml-auto">
+                                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-none d-md-block">
+                <div class="card border-0 rounded-lg shadow-sm">
+                    <img src="/assets/course-node.jpg" class="card-img-top" alt="node image">
+                    <div class="card-body">
+                        <h6 class="card-title">Beginning Node.js, Express & MongoDB Development</h6>
+                        <div class="d-flex flex-wrap">
+                            <div class="mr-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-clock mr-1">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span class="font-sm">2h 00m</span>
+                            </div>
+
+                            <div>
+                                <svg class="me-1 mt-n1" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE"></rect>
+                                    <rect x="7" y="5" width="2" height="9" rx="1" fill="#754FFE"></rect>
+                                    <rect x="11" y="2" width="2" height="12" rx="1" fill="#DBD8E9"></rect>
+                                </svg>
+                                <span class="font-sm">Intermediate</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-end flex-wrap my-3">
+                            <div class="d-flex align-items-center stars font-sm mr-2">
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                4.0
+                            </div>
+                            <span>(15,700)</span>
+                        </div>
+                        <div class="price font-sm">
+                            <span>$800</span>
+                            <del>$950</del>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white ">
+                        <div class="d-flex align-items-center">
+                            <img src="/assets/avatar-3.jpg" class="rounded-circle mr-2" alt="avatar image 5"
+                                width="30" height="30">
+                            <span class="font-sm">Sina Ray</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-bookmark opacity-50 ml-auto">
+                                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-none d-lg-block">
+                <div class="card border-0 rounded-lg shadow-sm">
+                    <img src="/assets/course-laravel.jpg" class="card-img-top" alt="laravel image">
+                    <div class="card-body">
+                        <h6 class="card-title">Laravel: The Ultimate Beginner’s Guide to Learn Laravel Step by Step
+                        </h6>
+                        <div class="d-flex flex-wrap">
+                            <div class="mr-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="feather feather-clock mr-1">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                                <span class="font-sm">1h 00m</span>
+                            </div>
+
+                            <div>
+                                <svg class="me-1 mt-n1" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="3" y="8" width="2" height="6" rx="1" fill="#754FFE"></rect>
+                                    <rect x="7" y="5" width="2" height="9" rx="1" fill="#DBD8E9"></rect>
+                                    <rect x="11" y="2" width="2" height="12" rx="1" fill="#DBD8E9"></rect>
+                                </svg>
+                                <span class="font-sm">Beginner</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-end flex-wrap my-3">
+                            <div class="d-flex align-items-center stars font-sm mr-2">
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,15.4V6.1L13.71,10.13L18.09,10.5L14.77,13.39L15.76,17.67M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                <svg viewBox="0 0 24 24" role="presentation"
+                                    style="width: 0.875rem; height: 0.875rem;">
+                                    <path
+                                        d="M12,15.39L8.24,17.66L9.23,13.38L5.91,10.5L10.29,10.13L12,6.09L13.71,10.13L18.09,10.5L14.77,13.38L15.76,17.66M22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27L18.18,21L16.54,13.97L22,9.24Z"
+                                        style="fill: currentcolor;"></path>
+                                </svg>
+                                4.5
+                            </div>
+                            <span>(2,500)</span>
+                        </div>
+                        <div class="price font-sm">
+                            <span>$170</span>
+                            <del>$220</del>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white ">
+                        <div class="d-flex align-items-center">
+                            <img src="/assets/avatar-7.jpg" class="rounded-circle mr-2" alt="avatar image 5"
+                                width="30" height="30">
+                            <span class="font-sm">Sobo Rikhan</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-bookmark opacity-50 ml-auto">
+                                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow-left">
+                <h1><h1><i class="bi bi-arrow-left-circle-fill"></i></h1></h1>
+            </div>
+            <div class="arrow-right">
+                <h1><i class="bi bi-arrow-right-circle-fill"></i></h1>
+            </div>
+        </div>
+
+    </div>
+</section>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
 </html>
